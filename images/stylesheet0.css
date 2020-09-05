@@ -1,0 +1,124 @@
+body {
+  background-image: url(back.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+  height: 100%;
+  display: none;
+}
+body {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+}
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+h1
+{
+    color: #aaa9ad;
+    text-align: center;
+    user-select: none;
+}
+h1:hover{
+    color: #757575;
+}
+.headers{
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+    user-select: none;
+
+}
+
+.headers>img{
+    border-radius: 25px 25px 25px 25px;
+}
+.headers>img:hover{
+    opacity: .5;
+    transform: scale(1.1);
+     }
+audio{
+  opacity: .7;
+}
+audio:hover
+{
+  opacity: .5;
+
+
+}
+.center{
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  height: 10%;
+  user-select: none;
+}
+.center:hover{
+  border:2px solid green;
+  opacity: .7;
+    transform: scale(1.1);
+}
+.font{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 2px;
+  border-top: 2px solid white;
+  user-select: none;
+}
+.font>i
+{
+  font-size: 30px;
+  padding: 5px;
+  color: white;
+}
+.font>i:hover{
+  opacity: .7;
+}
+.fa-github:hover{
+  color: #000000;
+}
+.fa-twitter:hover{
+  color: aqua;
+}
+.fa-instagram:hover{
+  color: pink;
+}
+.fa-facebook:hover{
+  color:blue;
+}
+.fa-reddit:hover{
+  color: orange;
+}
+q{
+  font-style: italic;
+}
+@media only screen and (max-height: 600px) {
+  .font{
+  position:relative;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-top: 2px solid white;
+  user-select: none;
+  }
+
+  }
